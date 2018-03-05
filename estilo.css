@@ -1,0 +1,777 @@
+@keyframes giro01 {
+  0% {
+    transform: rotate(15deg);
+  }
+}
+
+@keyframes giro02 {
+  0% {
+    transform: rotate(-15deg);
+  }
+}
+
+@keyframes giro03 {
+  0% {
+    transform: rotate(15deg);
+  }
+}
+
+@keyframes giro04{
+  0% {
+    transform: rotate(-15deg);
+  }
+}
+
+@keyframes cesta1 {
+  0% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(-10deg);
+  }
+}
+
+@keyframes cesta2 {
+  0% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(-10deg);
+  }
+}
+
+@keyframes chapeucena1 {
+  0%{
+    transform: translateX(0px);
+  }
+  100%{
+    transform: translateX(350px) translateY(100px);
+  }
+
+}
+
+@keyframes chapeucena2 {
+  0%{
+    transform: translateX(0px);
+  }
+  100%{
+    transform: translateX(300px) translateY(50px);
+  }
+
+}
+
+@keyframes lobocena1 {
+  0%{
+    transform: translateX(0px);
+  }
+  100%{
+    transform: translateX(-700px);
+  }
+}
+
+@keyframes lobocena2 {
+  0%{
+    transform: translateX(0px);
+  }
+  100%{
+    transform: translateX(-280px);
+  }
+}
+
+@keyframes lenhadorcena3 {
+  0%{
+    transform: translateX(0px);
+  }
+  100%{
+    transform: translateX(500px);
+  }
+}
+
+@keyframes lobotronco {
+  0%{
+    transform: scale(1);
+  }
+  100%{
+    transform: scale(1.03);
+  }
+
+}
+
+@keyframes lobocauda {
+  0%{
+    transform: scaleY(1);
+  }
+  100%{
+    transform: scaleY(1.1);
+  }
+
+}
+
+@keyframes barriga {
+  0%{
+    transform: scaleY(1);
+  }
+  100%{
+    transform: scaleY(1.2);
+  }
+
+}
+
+
+html, body{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+.cenario {
+  width: 1059px;
+  height: 800px;
+  position: fixed;
+  margin: auto;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  overflow:hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body.cena1 .cenario {
+  background-image: url("imagens/cenario/cena1/cena1.png");
+}
+
+body.cena2 .cenario  {
+  background-image: url("imagens/cenario/cena2/cena2.png");
+}
+
+body.cena3 .cenario  {
+  background-image: url("imagens/cenario/cena3/cena3.png");
+}
+
+body.cena4 .cenario  {
+  background-image: url("imagens/cenario/cena4/cena4.png");
+}
+
+body.cena1 .lobo  {
+  top: 15%;
+  left: 120%;
+  animation: lobocena1 7s 5s forwards linear;
+}
+
+body.cena1 .lobo .tronco  {
+  animation: lobotronco 1s infinite alternate;
+}
+
+body.cena1 .lobo .cauda  {
+  animation: lobocauda 1s infinite alternate;
+}
+
+body.cena1 .lobo .perna.esq {
+  animation: giro01 1s 12 alternate;
+}
+
+body.cena1 .lobo .perna.dir {
+  animation: giro02 1s 12 alternate linear;
+}
+
+body.cena1 .lobo .mao.esq {
+  animation: giro01 1s 12 alternate;
+}
+
+body.cena1 .lobo .braco.dir {
+  animation: giro02 1s 12 alternate linear;
+}
+
+body.cena1 .chapeu  {
+  top: 35%;
+  left: -20%;
+  animation: chapeucena1 5s forwards linear;
+}
+
+body.cena1 .cesta {
+  top: 35%;
+  left: 5%;
+  animation: cesta1 1s infinite alternate;
+}
+
+body.cena1 .chapeu .perna.esq{
+  animation: giro01 1s 5 alternate;
+}
+
+body.cena1 .chapeu .perna.dir{
+  animation: giro02 1s 5 alternate;
+}
+
+body.cena1 .lobovovo  {
+  top: 200%;
+  left: 200%;
+}
+
+body.cena1 .lenhador  {
+  top: 200%;
+  left: 200%;
+}
+
+body.cena1 .vovo  {
+  top: 200%;
+  left: 200%;
+}
+
+body.cena1 .barriga  {
+  top: 200%;
+  left: 200%;
+}
+
+body.cena2 .lenhador  {
+  top: 200%;
+  left: 200%;
+}
+
+body.cena2 .vovo  {
+  top: 200%;
+  left: 200%;
+}
+
+body.cena2 .lobovovo  {
+  top: 22%;
+  left: 50%;
+}
+
+body.cena2 .lobovovo  {
+  animation: lobocena2 2s 8s linear forwards;
+}
+
+body.cena2 .lobovovo .tronco  {
+  animation: lobotronco 1s infinite alternate;
+}
+
+body.cena2 .lobovovo .cauda  {
+  animation: lobocauda 1s infinite alternate;
+}
+
+body.cena2 .lobovovo .perna.esq{
+  animation: giro01 1s 8s 2 alternate linear;
+}
+
+body.cena2 .lobovovo .perna.dir{
+  animation: giro02 1s 8s 2 alternate linear;
+}
+
+body.cena2 .lobovovo .mao.esq {
+  animation: giro01 1s 8s 2 alternate;
+}
+
+body.cena2 .lobovovo .braco.dir {
+  animation: giro02 1s 8s 2 alternate linear;
+}
+
+body.cena2 .chapeu  {
+  top: 50%;
+  left: -20%;
+  animation: chapeucena2 5s forwards linear;
+}
+
+body.cena2 .chapeu .perna.esq{
+  animation: giro03 1s 5 alternate;
+}
+
+body.cena2 .chapeu .perna.dir{
+  animation: giro04 1s 5 alternate;
+}
+
+body.cena2 .cesta {
+  animation: cesta1 1s infinite alternate;
+}
+
+
+body.cena2 .lobo  {
+  top: 200%;
+  left: 200%;
+}
+
+body.cena2 .barriga  {
+  top: 150%;
+  left: 150%;
+}
+
+body.cena3 .chapeu  {
+  top: 200%;
+  left: 200%;
+}
+
+body.cena3 .vovo  {
+  top: 200%;
+  left: 200%;
+}
+
+body.cena3 .lobo  {
+  top: 200%;
+  left: 200%;
+}
+
+body.cena3 .lobovovo  {
+  top: 200%;
+  left: 200%;
+}
+
+body.cena3 .lenhador  {
+  animation: lenhadorcena3 7s 2s linear forwards;
+  top: 30%;
+  left: -30%;
+}
+
+body.cena3 .lenhador .perna.esq {
+  animation: giro02 1s 9 alternate linear forwards;
+}
+
+body.cena3 .lenhador .perna.dir {
+  animation: giro01 1s 9 alternate linear forwards;
+}
+
+body.cena3 .lenhador .braco.esq {
+  animation: giro01 1s 9 alternate linear forwards;
+}
+
+body.cena3 .lenhador .braco.dir {
+  animation: giro02 1s 9 alternate linear forwards;
+}
+
+body.cena3 .barriga  {
+  animation: barriga 1.5s infinite alternate;
+  top: 325px;
+  left: 539px;
+}
+
+body.cena4 .lobo  {
+  top: 200%;
+  left: 200%;
+}
+
+body.cena4 .lobovovo  {
+  top: 200%;
+  left: 200%;
+}
+
+body.cena4 .barriga  {
+  top: 200%;
+  left: 200%;
+}
+
+body.cena4 .chapeu  {
+  top: 65%;
+  left: 57%;
+}
+
+body.cena4 .cesta {
+  animation: 1s cesta2 infinite alternate;
+}
+
+
+body.cena4 .vovo  {
+  top: 53%;
+  left: 73%;
+}
+
+body.cena4 .lenhador  {
+  top: 40%;
+  left: 20%;
+}
+
+.chapeu{
+	position: absolute;
+}
+
+.barriga {
+  position: absolute;
+  background-size: cover;
+  background-image: url("imagens/cenario/cena3/barriga.png");
+  width:253px;
+  height: 101px;
+  transform-origin: bottom center;
+}
+
+.corpo{
+	background-image: url("imagens/personagens/chapeu/corpo.png");
+	background-size: cover;
+	width: 130px;
+	height: 146px;
+}
+
+.chapeu .cabeca{
+	background-image: url("imagens/personagens/chapeu/cabeca.png");
+	background-size: cover;
+	width: 99px;
+	height: 200px;
+	position: absolute;
+	bottom: 115px;
+	left: 16px;
+	transform-origin: center 80%;
+}
+
+.chapeu .perna.esq{
+	background-image: url("imagens/personagens/chapeu/pernaEsq.png");
+	background-size: cover;
+	width: 42px;
+	height: 68px;
+	position: absolute;
+	top: 125px;
+	left: 20px;
+	z-index: -1;
+	transform-origin: top center;
+}
+
+.chapeu .perna.dir{
+	background-image: url("imagens/personagens/chapeu/pernaDir.png");
+	background-size: cover;
+	width: 42px;
+	height: 68px;
+	position: absolute;
+	top: 125px;
+	left: 60px;
+	z-index: -1;
+	transform-origin: top center;
+}
+
+.chapeu .cesta{
+	background-image: url("imagens/personagens/chapeu/cesta.png");
+	background-size: cover;
+	width: 87px;
+	height: 77px;
+	position: absolute;
+	top: 60px;
+	left: -20px;
+	transform-origin: top center;
+}
+
+.chapeu .pe.esq{
+	background-image: url("imagens/personagens/chapeu/peEsq.png");
+	background-size: cover;
+	position: absolute;
+	width: 38px;
+	height:26px;
+	bottom: -25px;
+	left: 22px;
+}
+
+.chapeu .pe.dir{
+	background-image: url("imagens/personagens/chapeu/peDir.png");
+	background-size: cover;
+	position: absolute;
+	width: 47px;
+	height:21px;
+	bottom: -20px;
+	left: 1px;
+}
+
+.chapeu .capa{
+	background-image: url("imagens/personagens/chapeu/capa.png");
+	background-size: cover;
+	width: 154px;
+	height:196px;
+	position: absolute;
+	left: -13px;
+	top: -9px;
+	z-index: -1;
+}
+
+.lobo {
+  position: absolute;
+}
+
+.lobo .tronco{
+  background-image: url("imagens/personagens/lobo/tronco.png");
+  background-size: cover;
+  position: absolute;
+  width: 288px;
+  height:329px;
+  transform-origin: bottom center;
+}
+
+.lobo .cabeca{
+  background-image: url("imagens/personagens/lobo/cabeca.png");
+  background-size: cover;
+  position: absolute;
+  width: 191px;
+  height:162px;
+  top: 20px;
+  left: -100px;
+}
+
+.lobo .cauda{
+  background-image: url("imagens/personagens/lobo/cauda.png");
+  background-size: cover;
+  position: absolute;
+  width: 213px;
+  height:195px;
+  top: 180px;
+  left: 222px;
+  transform-origin: bottom center;
+}
+
+.lobo .braco.dir{
+  background-image: url("imagens/personagens/lobo/bracoDir.png");
+  background-size: cover;
+  position: absolute;
+  width: 104px;
+  height:124px;
+  top: 50px;
+  left: 70px;
+}
+
+.lobo .mao.dir{
+  background-image: url("imagens/personagens/lobo/maoDir.png");
+  background-size: cover;
+  position: absolute;
+  width: 269px;
+  height:159px;
+  top: 110px;
+  right: -50px;
+}
+
+.lobo .mao.esq{
+  background-image: url("imagens/personagens/lobo/maoEsq.png");
+  background-size: cover;
+  position: absolute;
+  width: 127px;
+  height:63px;
+  top: 160px;
+  left: -40px;
+  z-index: -10;
+  transform-origin: top right;
+}
+
+.lobo .perna.dir{
+  background-image: url("imagens/personagens/lobo/pernaDir.png");
+  background-size: cover;
+  position: absolute;
+  width: 205px;
+  height:341px;
+  top: 270px;
+  left: 50px;
+  transform-origin: top right;
+}
+
+.lobo .perna.esq{
+  background-image: url("imagens/personagens/lobo/pernaEsq.png");
+  background-size: cover;
+  position: absolute;
+  width: 141px;
+  height:249px;
+  top: 260px;
+  left: 50px;
+  z-index: -10;
+  transform-origin: center right;
+}
+
+.lobovovo {
+  position: absolute;
+}
+
+.lobovovo .tronco {
+  background-image: url("imagens/personagens/lobovovo/tronco.png");
+  background-size: cover;
+  position: absolute;
+  width: 303px;
+  height: 348px;
+  transform-origin: top center;
+}
+
+.lobovovo .vestido {
+  background-image: url("imagens/personagens/lobovovo/vestido.png");
+  background-size: cover;
+  position: absolute;
+  width: 230px;
+  height: 290px;
+  top: 230px;
+  left:70px;
+}
+
+.lobovovo .cabeca {
+  background-image: url("imagens/personagens/lobovovo/cabeca.png");
+  background-size: cover;
+  position: absolute;
+  width: 201px;
+  height: 205px;
+  left: -130px;
+  top: -10px;
+}
+
+.lobovovo .braco.dir {
+  background-image: url("imagens/personagens/lobovovo/bracoDir.png");
+  background-size: cover;
+  position: absolute;
+  width: 285px;
+  height: 275px;
+  top: 50px;
+  left: -40px;
+  transform-origin: top center;
+}
+
+.lobovovo .mao.esq {
+  background-image: url("imagens/personagens/lobovovo/maoEsq.png");
+  background-size: cover;
+  position: absolute;
+  width: 134px;
+  height: 66px;
+  top: 170px;
+  left: -50px;
+  z-index: -10;
+}
+
+.lobovovo .perna.esq {
+  background-image: url("imagens/personagens/lobovovo/pernaEsq.png");
+  background-size: cover;
+  position: absolute;
+  width: 113px;
+  height: 169px;
+  top: 380px;
+  left: 50px;
+  z-index: -10;
+}
+
+.lobovovo .perna.dir {
+  background-image: url("imagens/personagens/lobovovo/pernaDir.png");
+  background-size: cover;
+  position: absolute;
+  width: 164px;
+  height: 244px;
+  top: 360px;
+  left: 60px;
+  z-index: -1;
+}
+
+.lobovovo .cauda {
+  background-image: url("imagens/personagens/lobovovo/cauda.png");
+  background-size: cover;
+  position: absolute;
+  width: 224px;
+  height: 206px;
+  top: 180px;
+  left: 225px;
+  z-index: -1;
+  transform-origin: bottom center;
+}
+
+.lenhador {
+  position: absolute;
+}
+
+.lenhador .tronco {
+  background-image: url("imagens/personagens/lenhador/tronco.png");
+  background-size: cover;
+  position: absolute;
+  width: 141px;
+  height: 209px;
+  transform-origin: top center;
+}
+
+.lenhador .perna.esq {
+  background-image: url("imagens/personagens/lenhador/pernaEsq.png");
+  background-size: cover;
+  position: absolute;
+  width: 77px;
+  height: 262px;
+  top: 150px;
+  right: 78px;
+  z-index: -10;
+  transform-origin: top center;
+}
+
+.lenhador .perna.dir {
+  background-image: url("imagens/personagens/lenhador/pernaDir.png");
+  background-size: cover;
+  position: absolute;
+  width: 67px;
+  height: 221px;
+  top: 150px;
+  left: 50px;
+  z-index: -10;
+  transform-origin: top center;
+}
+
+.lenhador .braco.esq {
+  background-image: url("imagens/personagens/lenhador/bracoEsq.png");
+  background-size: cover;
+  position: absolute;
+  width: 389px;
+  height: 282px;
+  top: 8px;
+  left: -90px;
+  transform-origin: top center;
+}
+
+.lenhador .braco.dir {
+  background-image: url("imagens/personagens/lenhador/bracoDir.png");
+  background-size: cover;
+  position: absolute;
+  width: 49px;
+  height: 182px;
+  top: 25px;
+  left: 125px;
+  transform-origin: top center;
+}
+
+.lenhador .cabeca {
+  background-image: url("imagens/personagens/lenhador/cabeca.png");
+  background-size: cover;
+  position: absolute;
+  width: 81px;
+  height: 128px;
+  top: -60px;
+  left: 60px;
+}
+
+.vovo {
+  position: absolute;
+}
+
+.vovo .tronco {
+  background-image: url("imagens/personagens/vovo/tronco.png");
+  background-size: cover;
+  position: absolute;
+  width: 118px;
+  height: 129px;
+}
+
+.vovo .pernas {
+  background-image: url("imagens/personagens/vovo/pernas.png");
+  background-size: cover;
+  position: absolute;
+  width: 132px;
+  height: 192px;
+  top: 125px;
+  left: -15px;
+}
+
+.vovo .cabeca {
+  background-image: url("imagens/personagens/vovo/cabeca.png");
+  background-size: cover;
+  position: absolute;
+  width: 112px;
+  height: 154px;
+  top: -90px;
+  left: -50px;
+}
+
+.vovo .braco.esq {
+  background-image: url("imagens/personagens/vovo/bracoEsq.png");
+  background-size: cover;
+  position: absolute;
+  width: 26px;
+  height: 115px;
+  top: 70px;
+  left: 0px;
+  z-index: -1;
+}
+
+.vovo .braco.dir {
+  background-image: url("imagens/personagens/vovo/bracoDir.png");
+  background-size: cover;
+  position: absolute;
+  width: 144px;
+  height: 236px;
+  top: 60px;
+  left: -45px;
+}
